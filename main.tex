@@ -1,0 +1,536 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CV.tex
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% See "README.md" for instructions on compiling this document.
+
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Shingo Kitagawa}
+\newcommand{\CVTitle}{Shingo Kitagawa's CV}
+\newcommand{\CVNote}{CV compiled on {\today}}
+\newcommand{\CVWebpage}{https://knorth55.com}
+\renewcommand{\FooterText}{\null}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+\href{\CVWebpage}
+{\url{\CVWebpage}}
+\,\SubBulletSymbol\,
+\href{mailto:shingogo.5511@gmail.com}
+{shingogo.5511@gmail.com}
+\par
+Date of birth: 4 December 1993
+\,\SubBulletSymbol\,
+Nationality: Japan
+\,\SubBulletSymbol\,
+Hometown: Kyoto, Japan
+\end{SubTitle}
+
+\begin{Body}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+\Entry
+\href{https://www.u-tokyo.ac.jp/en/}
+{\textbf{The University of Tokyo}},
+Bunkyo, Tokyo, Japan
+\Gap
+
+\Gap
+Ph.D. in
+\href{https://www.i.u-tokyo.ac.jp/index_e.shtml}
+{Creative Informatics, Information Science and Technology}
+\hfill
+\DatestampYMD{2019}{04}{01} --
+\DatestampYMD{2022}{03}{31}
+\begin{Detail}
+Thesis:
+Robot system architecture of transversal learning between maneuvering and autonomy using tangible interface
+\par
+Supervisor:
+Prof.~Kei~Okada
+\par
+Focus:
+Robotics, Teleoperation, User Interface, Manipulation, Manipulation Learning, Deep Learning
+\end{Detail}
+\Gap
+
+\Gap
+M.S. in
+\href{https://www.i.u-tokyo.ac.jp/index_e.shtml}
+{Creative Informatics, Information Science and Technology}
+\hfill
+\DatestampYMD{2017}{04}{01} --
+\DatestampYMD{2019}{03}{31}
+\begin{Detail}
+Thesis:
+Research on a self-supervised learning system of robotic recognition and behavior for manipulation tasks with dual-arm robot
+\par
+Supervisor:
+Prof.~Masayuki~Inaba
+\par
+Focus:
+Robotics, Manipulation, Manipulation Learning, Deep Learning
+\end{Detail}
+\Gap
+
+\Gap
+B.S. in
+\href{http://www.t.u-tokyo.ac.jp/en/foe}
+{Mechano-Informatics, Engineering}
+\hfill
+\DatestampYMD{2012}{04}{01} --
+\DatestampYMD{2017}{03}{31}
+\begin{Detail}
+Supervisor:
+Prof.~Kei~Okada
+\par
+Focus:
+Robotics, Manipulation, Manipulation Learning, Deep Learning
+\end{Detail}
+\Gap
+
+\Gap
+\Entry
+\href{https://www.epfl.ch/en/}
+{\textbf{École Polytechnique Fédérale de Lausanne}},
+Écublens, Canton of Vaud, Switzerland
+\Gap
+
+\Gap
+Exchange student in
+\href{http://www.t.u-tokyo.ac.jp/en/foe}
+{Mechanical Engineering, Engineering}
+\hfill
+\DatestampYMD{2014}{09}{01} --
+\DatestampYMD{2015}{08}{31}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Work EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Work Experience}
+{Work Experience}
+{PDF:WorkExperience}
+
+\Gap
+\Entry
+\href{https://www.u-tokyo.ac.jp/en/}
+{\textbf{The University of Tokyo}},
+Bunkyo, Tokyo, Japan
+\Gap
+
+\Gap
+Project Assistant Professor
+\hfill
+\DatestampYMD{2022}{04}{01} --
+Present
+\begin{Detail}
+Project:
+Automation for customer service at restaurants using robots
+\par
+Focus:
+Robotics, Manipulation, Human Recognition, State Machine
+\end{Detail}
+\Gap
+
+\Gap
+\Entry
+\href{https://www.preferred.jp/en/}
+{\textbf{Preferred Networks}},
+Chiyoda, Tokyo, Japan
+\Gap
+
+\Gap
+Part-time Engineer
+\hfill
+\DatestampYM{2018}{02} --
+\DatestampYM{2018}{12}
+\begin{Detail}
+Project:
+ChainerCV: Deep Learning Computer Vision Software
+\par
+Focus:
+Robotics, Object Recognition, Instance Segmentation, Deep Learning 
+\end{Detail}
+\Gap
+
+\Gap
+Internship
+\hfill
+\DatestampYM{2018}{08}
+\begin{Detail}
+Project:
+Manipulation Learning from Human Observation and Demonstration using Object Affordance Recognition
+\par
+Focus:
+Robotics, Manipulation, Manipulation Learning, Deep Learning
+\end{Detail}
+\Gap
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% RESEARCH EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Research Experience}
+{Research Experience}
+{PDF:ResearchExperience}
+
+\Gap
+\Entry
+\href{https://www.dlr.de/EN/Home/home_node.html}
+{\textbf{German Aerospace Center, Institute of Robotics and Mechatronics}},
+Weßling, Bavaria, Germany 
+\Gap
+
+\Gap
+Visiting Researcher
+\hfill
+\DatestampYM{2020}{02}
+\begin{Detail}
+\par
+Project:
+Manipulation Learning from Human Direct Teaching using Gaussian Mixture Model
+\par
+Supervisors:
+Dr.~Daniel Leidner,
+Prof.~Kei~Okada
+\par
+Focus:
+Robotics, Manipulation, Manipulation Learning, Gaussian Mixuture Model
+\end{Detail}
+\Gap
+
+%%%%%%%%%%%%%%%%%%
+%% PUBLICATIONS %%
+%%%%%%%%%%%%%%%%%%
+
+\Section
+{Publications}
+{Publications}
+{PDF:Publications}
+
+\SubSection
+{Journals}
+{Journals}
+{PDF:Journals}
+
+\begingroup
+
+\BulletItem
+\href{https://doi.org/10.1109/LRA.2021.3096475}
+{\underline{S.~Kitagawa}, S.~Hasegawa, N.~Yamaguchi, K.~Okada and M.~Inaba,
+``Miniature Tangible Cube: Concept and Design of Target-Object-Oriented User Interface for Dual-Arm Telemanipulation,''
+\textit{IEEE Robotics and Automation Letters},
+volume~6,
+Issue~4,
+pp.~6977--6984,
+\DatestampYM{2021}{07}.}
+
+\Gap
+\BulletItem
+\href{https://doi.org/10.1080/01691864.2020.1783352}
+{\underline{S.~Kitagawa}, K.~Wada, S.~Hasegawa, K.~Okada and M.~Inaba,
+``Few-experiential learning system of robotic picking task with selective dual-arm grasping,''
+\textit{Advanced Robotics},
+volume~34,
+issue~18,
+pp.~1171--1189,
+\DatestampYM{2020}{06}.}
+
+\endgroup
+
+\BigGap
+\SubSection
+{Books}
+{Books}
+{PDF:Books}
+
+\begingroup
+
+\BulletItem
+\href{https://doi.org/10.1007/978-3-030-01370-7_34}
+{\underline{S.~Kitagawa}, K.~Wada, K.~Okada and M.~Inaba,
+``Learning-Based Task Failure Prediction for Selective Dual-Arm Manipulation in Warehouse Stowing,''
+\textit{In: Strand, M., Dillmann, R., Menegatti, E., Ghidoni, S. (eds) Intelligent Autonomous Systems 15. IAS 2018},
+volume~867,
+pp.~428-439,
+\DatestampYM{2018}{12}.}
+
+\endgroup
+
+\BigGap
+\SubSection
+{Conferences}
+{Conferences}
+{PDF:Conferences}
+
+\begingroup
+
+\BulletItem
+\href{https://doi.org/10.1145/3526113.3545699}
+{T.~Yoshida, N.~Okazaki, K.~Takaki, M.~Hirose, \underline{S.~Kitagawa}, and M.~Inami,
+``Flexel: A Modular Floor Interface for Room-Scale Tactile Sensing,''
+\textit{UIST '22: Proceedings of the 35th Annual ACM Symposium on User Interface Software and Technology},
+\DatestampYM{2022}{10}.}
+
+\BulletItem
+\href{https://doi.org/10.1109/ICRA46639.2022.9812084}
+{S.~Wakabayashi, \underline{S.~Kitagawa}, K.~Kawaharazuka, T.~Murooka, K.~Okada and M.~Inaba,
+``Grasp Pose Selection Under Region Constraints for Dirty Dish Grasps Based on Inference of Grasp Success Probability through Self-Supervised Learning,''
+\textit{Proceedings of 2022 International Conference on Robotics and Automation (ICRA)},
+pp.~8312-8318,
+\DatestampYM{2022}{5}.}
+
+\BulletItem
+\href{https://doi.org/10.1109/RoboSoft54090.2022.9762208}
+{T.~Hirose, \underline{S.~Kitagawa}, S.~Hasegawa, Y.~Kakiuchi, K.~Okada and M.~Inaba,
+``Waterproof Soft Robot Hand with Variable Stiffness Wire-driven Finger Mechanism Using Low Melting Point Alloy for Contact Pressure Distribution and Concentration,''
+\textit{Proceedings of 2022 IEEE 5th International Conference on Soft Robotics (RoboSoft)},
+pp.~109-116,
+\DatestampYM{2022}{4}.}
+
+\BulletItem
+\href{https://doi.org/10.1109/RO-MAN47096.2020.9223518}
+{A.~Fujii, K.~Kochigami, \underline{S.~Kitagawa}, K.~Okada and M.~Inaba,
+``Development and Evaluation of Mixed Reality Co-eating System: Sharing the Behavior of Eating Food with a Robot Could Improve Our Dining Experience,''
+\textit{Proceedings of 2020 29th IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)},
+pp.~357-362,
+\DatestampYM{2020}{9}.}
+
+\BulletItem
+\href{https://doi.org/10.1109/ICRA.2019.8793710}
+{S.~Hasegawa, K.~Wada, \underline{S.~Kitagawa}, Y.~Uchimi, K.~Okada and M.~Inaba,
+``GraspFusion: Realizing Complex Motion by Learning and Fusing Grasp Modalities with Instance Segmentation,''
+\textit{Proceedings of 2019 International Conference on Robotics and Automation (ICRA)},
+pp.~7235-7241,
+\DatestampYM{2019}{5}.}
+
+\BulletItem
+\href{https://doi.org/10.1109/IROS.2018.8593752}
+{\underline{S.~Kitagawa}, K.~Wada, S.~Hasegawa, K.~Okada and M.~Inaba,
+``Multi-stage Learning of Selective Dual-arm Grasping Based on Obtaining and Pruning Grasping Points Through the Robot Experience in the Real World,''
+\textit{Proceedings of 2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+pp.~7123-7130,
+\DatestampYM{2018}{10}.}
+
+\BulletItem
+\href{https://doi.org/10.1109/IROS.2018.8593690}
+{K.~Wada, \underline{S.~Kitagawa}, K.~Okada and M.~Inaba,
+``Instance Segmentation of Visible and Occluded Regions for Finding and Picking Target from a Pile of Objects,''
+\textit{Proceedings of 2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+pp.~2048-2055,
+\DatestampYM{2018}{10}.}
+
+\hfill
+\href{https://scholar.google.com/citations?user=deAeiIkAAAAJ}{\underline{See more…}}
+
+\endgroup
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% AWARDS & SCHOLARSHIPS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Awards \&\newline
+Scholarships}
+{Awards \& Scholarships}
+{PDF:AwardsAndScholarships}
+
+\BulletItem
+JSPS Research Fellowship for Young Scientists (DC2),
+\hfill
+\DatestampYM{2020}{04} --
+\DatestampYM{2022}{03}
+\newline
+Japan Society for the Promotion of Science
+
+\BulletItem
+2019 IEEE RAS Japan Joint Chapter Young Award (ICRA2019)
+\hfill
+\DatestampYM{2019}{05}
+\newline
+S.~Hasegawa, K.~Wada, S.~Kitagawa, Y.~Uchimi, K.~Okada and M.~Inaba:
+GraspFusion:Realizing Complex Motion by Learning and Fusing Grasp Modalities with Instance Segmentation
+
+\BulletItem
+Toyota Dwango Advanced Artificial Intelligence Scholarship,
+\hfill
+\DatestampYM{2018}{04} --
+\DatestampYM{2019}{03}
+\newline
+Toyota, Dwango
+
+\BulletItem
+2018 IEEE RAS Japan Joint Chapter Young Award (IROS2018)
+\hfill
+\DatestampYM{2018}{10}
+\newline
+K.~Wada, S.~Kitagawa, K.~Okada and M.~Inaba: Instance Segmentation of Visible and
+Occluded Regions for Finding and Picking Target from a Pile of Objects
+
+\BulletItem
+Amazon Picking Challenge, Amazon Robotics Challenge
+\hfill
+\DatestampY{2016} --
+\DatestampY{2017}
+\newline
+5th Picking Task Award, 8th Stowing Task Award
+\begin{Detail}
+\Item
+Leader of the UTokyo Team (Team-K)
+\end{Detail}
+
+\BulletItem
+International Bio-molecular Design Competition 2012 (BIOMOD 2012),
+\hfill
+\DatestampYM{2012}{11}
+\newline
+Gold Project Award, 3rd Audience Choice Award, 3rd Best Project Website Award, 2nd Best Presentation Award
+\begin{Detail}
+\Item
+Member and Presentor of the UTokyo Team (Team-Komaba)
+\end{Detail}
+
+\Gap
+
+%%%%%%%%%%%%%%%
+%% LANGUAGES %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Languages}
+{Languages}
+{PDF:Languages}
+
+\BulletItem
+Japanese: Native language.
+
+\Gap
+\BulletItem
+English: Fluent (speaking, reading, writing).
+
+\Gap
+\BulletItem
+French: Basic (speaking, reading, writing).
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+\Section
+{Skills}
+{Skills}
+{PDF:Skills}
+
+\Entry
+Linux (Ubuntu, Debian),
+Windows,
+Mac OS,
+Python,
+C++,
+Lisp,
+C,
+Java Script,
+Cuda,
+Perl,
+PHP,
+Scala,
+Java,
+{\LaTeX},
+MongoDB,
+InfluxDB,
+MATLAB,
+Adobe InDesign,
+Adobe Photoshop,
+Adobe Illustrator,
+Microsoft Word,
+Microsoft Excel,
+Microsoft PowerPoint,
+Davinci Resolve.
+
+%%%%%%%%%%%%%%%
+%% INTERESTS %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Interests}
+{Interests}
+{PDF:Interests}
+
+\Entry
+Skiing,
+hiking,
+swimming,
+watching movies.
+
+\end{Body}
+
+%%%%%%%%%%%
+% CV NOTE %
+%%%%%%%%%%%
+
+\BigGap
+\UseNoteFont%
+\null\hfill%
+[\textit{\CVNote}]
+
+\end{document}
